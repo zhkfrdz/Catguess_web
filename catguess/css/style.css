@@ -1,0 +1,242 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #888;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #FF6B4A;
+    color: white;
+    border: none;
+}
+
+.primary-btn:hover {
+    background-color: #ff5a35;
+}
+
+.outline-btn {
+    background-color: transparent;
+    color: #FF6B4A;
+    border: 2px solid #FF6B4A;
+}
+
+.outline-btn:hover {
+    background-color: rgba(255, 107, 74, 0.1);
+}
+
+/* Forms */
+.form-container {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #FF6B4A;
+}
+
+/* Game UI */
+.game-container {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.level-indicator {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FF6B4A;
+}
+
+.range-text {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.hearts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.heart {
+    color: #FF6B4A;
+    font-size: 30px;
+    margin: 0 5px;
+}
+
+.hint-container {
+    margin-bottom: 20px;
+}
+
+.hint-message {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+}
+
+.hint-message.show {
+    display: block;
+}
+
+/* Admin Panel */
+.admin-panel {
+    width: 100%;
+    max-width: 800px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.admin-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-nav a {
+    padding: 10px 15px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.admin-nav a.active {
+    background-color: #FF6B4A;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.admin-table th {
+    background-color: #222;
+}
+
+.admin-table tr:hover {
+    background-color: #222;
+}
+
+/* Alerts */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: rgba(40, 167, 69, 0.2);
+    border: 1px solid #28a745;
+    color: #28a745;
+}
+
+.alert-danger {
+    background-color: rgba(220, 53, 69, 0.2);
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    .btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
